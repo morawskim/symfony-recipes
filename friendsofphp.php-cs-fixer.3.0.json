@@ -1,0 +1,9 @@
+{
+    "manifests": {
+        "friendsofphp/php-cs-fixer": {
+            "manifest": {
+            },
+            "ref": "511a7e953a4b9f0908d93e028f6aba6ef15ee41a"
+        }
+    }
+}

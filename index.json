@@ -1,0 +1,17 @@
+{
+    "recipes": {
+        "mmo/coding-standards": [
+            "0.1"
+        ],
+        "friendsofphp/php-cs-fixer": [
+            "3.0"
+        ]
+    },
+    "branch": "main",
+    "is_contrib": true,
+    "_links": {
+        "repository": "github.com/morawskim/symfony-recipes",
+        "origin_template": "{package}:{version}@github.com/morawskim/symfony-recipes:main",
+        "recipe_template": "https://api.github.com/repos/morawskim/symfony-recipes/contents/{package_dotted}.{version}.json"
+    }
+}

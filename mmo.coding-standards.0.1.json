@@ -1,0 +1,42 @@
+{
+    "manifests": {
+        "mmo/coding-standards": {
+            "manifest": {
+                "gitignore": [
+                    "/.php-cs-fixer.php",
+                    "/.php-cs-fixer.cache"
+                ],
+                "copy-from-recipe": {
+                    ".php-cs-fixer.dist.php": ".php-cs-fixer.dist.php"
+                },
+                "makefile": [
+                    "mmo-check-coding-standards:",
+                    "\tvendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php -v --dry-run --stop-on-violation --using-cache=no",
+                    ".PHONY: mmo-check-coding-standards",
+                    "",
+                    "mmo-fix-coding-standards:",
+                    "\tvendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php",
+                    ".PHONY: mmo-fix-coding-standards"
+                ]
+            },
+            "files": {
+                ".php-cs-fixer.dist.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "$config = require_once __DIR__ . '/vendor/mmo/coding-standards/configuration.php';",
+                        "",
+                        "return $config->setFinder(",
+                        "    PhpCsFixer\\Finder::create()",
+                        "        ->in(__DIR__.'/src')",
+                        "        ->name('*.php')",
+                        "    );",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "50b59151b9803f02ef74c4d2fbec6a4853b77521"
+        }
+    }
+}
