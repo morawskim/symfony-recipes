@@ -17,7 +17,10 @@
                     "mmo-fix-coding-standards:",
                     "\tvendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php",
                     ".PHONY: mmo-fix-coding-standards"
-                ]
+                ],
+                "composer-commands": {
+                    "mmo:check-coding-standards": "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php -v --dry-run --stop-on-violation --using-cache=no"
+                }
             },
             "files": {
                 ".php-cs-fixer.dist.php": {
@@ -36,7 +39,7 @@
                     "executable": false
                 }
             },
-            "ref": "50b59151b9803f02ef74c4d2fbec6a4853b77521"
+            "ref": "c400c99a6331b99fcd0f07e35e812c534c50da32"
         }
     }
 }

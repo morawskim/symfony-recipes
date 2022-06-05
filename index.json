@@ -7,11 +7,11 @@
             "3.0"
         ]
     },
-    "branch": "main",
+    "branch": "test",
     "is_contrib": true,
     "_links": {
         "repository": "github.com/morawskim/symfony-recipes",
-        "origin_template": "{package}:{version}@github.com/morawskim/symfony-recipes:main",
+        "origin_template": "{package}:{version}@github.com/morawskim/symfony-recipes:test",
         "recipe_template": "https://api.github.com/repos/morawskim/symfony-recipes/contents/{package_dotted}.{version}.json"
     }
 }
