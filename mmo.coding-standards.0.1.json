@@ -10,6 +10,7 @@
                     ".php-cs-fixer.dist.php": ".php-cs-fixer.dist.php"
                 },
                 "makefile": [
+                    "# branch test",
                     "mmo-check-coding-standards:",
                     "\tvendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php -v --dry-run --stop-on-violation --using-cache=no",
                     ".PHONY: mmo-check-coding-standards",
